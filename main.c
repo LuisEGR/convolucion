@@ -51,6 +51,11 @@ int main(int argc, char *argv[]) {
   fc = 1000.0;   // Frecuencia de corte en hz
   fm = 44100.0;  // Frecuencia de muestreo en hz
   cantidadMuestrasPasabajas = 20;
+
+  fc = 3000;
+  fm = 16000;
+  cantidadMuestrasPasabajas = 10;
+
   pasabajas = obtenerMuestrasPasabajasRC(cantidadMuestrasPasabajas, fc, fm);
 
   // Se imprimen las muestras generadas del filtro pasabajas
